@@ -1,1 +1,101 @@
+.fliq-clock {
+  --fcc-flip-duration: 0.5s;
+  --fcc-digit-block-width: 30px;
+  --fcc-digit-block-height: 60px;
+  --fcc-digit-font-size: 30px;
+  --fcc-digit-color: #000;
+  --fcc-label-font-size: 10px;
+  --fcc-label-color: #fff;
+  --fcc-background: #fff;
+  --fcc-divider-color: #000;
+  --fcc-divider-height: 1px;
+  --fcc-separator-size: 6px;
+  --fcc-separator-color: #fff;
+}
 
+.fliq-clock {
+  font-family: "Orbitron";
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.page__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page h3 {
+  font-weight: 300;
+  max-width: 25rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  width: 180px;
+  height: 64px;
+  background: #fff;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media (min-width: 900px) {
+  .page h1 {
+    font-size: 4rem;
+  }
+  .page h3 {
+    max-width: 600px;
+  }
+  .fliq-clock {
+    --fcc-digit-block-width: 80px;
+    --fcc-digit-block-height: 120px;
+    --fcc-digit-font-size: 60px;
+    --fcc-digit-color: #000;
+    --fcc-label-font-size: 20px;
+  }
+}
